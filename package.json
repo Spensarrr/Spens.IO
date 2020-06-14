@@ -1,0 +1,14 @@
+{
+  "name": "spens.io",
+  "version": "1.0.0",
+  "description": "A simple electron desktop aplication for running admin Min.IO Commands instead of using the CLI. ",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Spencer LeJeune",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.0.4"
+  }
+}
