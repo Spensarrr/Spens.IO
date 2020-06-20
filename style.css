@@ -1,0 +1,10 @@
+.outputBox {
+    height: 100px;
+    background-color: grey;
+    width: 100%;
+    text-align: center;
+}
+
+.bottom-extend {
+    height: 100px;
+}
