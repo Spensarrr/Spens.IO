@@ -1,11 +1,11 @@
 const { exec } = require("child_process");
 
-userList = 'mc admin user list --json ' + alias
-userAdd = 'mc admin user add ' + alias + ' ' + userName + ' ' + userPass
-userDisable = 'mc admin user disable ' + alias + ' ' + userName
-userEnable = 'mc admin user enable ' + alias + ' ' + userName
-userRemove = 'mc admin user remove ' + alias + ' ' + userName
-userInfo = 'mc admin user info ' + alias + ' ' + userName
+// userList = 'mc admin user list --json ' + alias
+// userAdd = 'mc admin user add ' + alias + ' ' + userName + ' ' + userPass
+// userDisable = 'mc admin user disable ' + alias + ' ' + userName
+// userEnable = 'mc admin user enable ' + alias + ' ' + userName
+// userRemove = 'mc admin user remove ' + alias + ' ' + userName
+// userInfo = 'mc admin user info ' + alias + ' ' + userName
 
 
 function test() {

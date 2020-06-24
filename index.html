@@ -16,7 +16,16 @@
             <h2>Spens.IO</h2>
             <hr>
         </div>
-        <button class="btn btn-dark" onclick="test()">Server Information</button>
+        <div class="container">
+            <div class="row p-2 d-flex justify-content-center">
+                <h4><span class="align-middle">Alias</span></h4>
+                <input class="mx-2" type="text" placeholder="Alias" id='alias'>
+                <button class="btn btn-dark mx-2" onclick="localSave()">Save</button>
+            </div>
+        </div>
+        <hr>
+
+        <button class="btn btn-dark" onclick="serviceInfo()">Server Information</button>
         <hr>
         <div class="container">
             <h4>User Functions</h4>
@@ -84,13 +93,15 @@
         <div class="container">
             <div class="row">
                 <div class="fixed-bottom outputBox">
-                    <p>This is a test</p>
+                    <p id="outputField">-</p>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="commands/user.js"></script>
+    <script src="commands/sui.js"></script>
+    <script src="commands/save.js"></script>
 </body>
 
 </html>
