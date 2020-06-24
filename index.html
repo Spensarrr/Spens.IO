@@ -25,38 +25,41 @@
         </div>
         <hr>
 
+        <!-- SUI Fucntions -->
         <button class="btn btn-dark" onclick="serviceInfo()">Server Information</button>
         <hr>
+
+        <!-- User Fucntions -->
         <div class="container">
             <h4>User Functions</h4>
             <div class="row p-2">
-                <button class="btn btn-dark mx-2">User's List</button>
+                <button class="btn btn-dark mx-2" onclick="userList()">User's List</button>
             </div>
             <div class="row p-2">
-                <button class="btn btn-dark mx-2">Add</button>
-                <input class="mx-2" type="text" placeholder="Username">
-                <input class="mx-2" type="text" placeholder="Password">
+                <button class="btn btn-dark mx-2" onclick="userAdd()">Add</button>
+                <input class="mx-2" type="text" placeholder="Username" id="username1">
+                <input class="mx-2" type="text" placeholder="Password" id="password1">
             </div>
             <div class="row p-2">
-                <button class="btn btn-dark mx-2">Remove</button>
-                <input class="mx-2" type="text" placeholder="Username">
+                <button class="btn btn-dark mx-2" onclick="userRemove()">Remove</button>
+                <input class="mx-2" type="text" placeholder="Username" id="username2">
             </div>
             <div class="row p-2">
-                <button class="btn btn-dark mx-2">Information</button>
-                <input class="mx-2" type="text" placeholder="Username">
+                <button class="btn btn-dark mx-2" onclick="userInfo()">Information</button>
+                <input class="mx-2" type="text" placeholder="Username" id="username3">
             </div>
             <div class="row p-2">
-                <button class="btn btn-dark mx-2">Enable</button>
-                <input class="mx-2" type="text" placeholder="Username">
+                <button class="btn btn-dark mx-2" onclick="userEnable()">Enable</button>
+                <input class="mx-2" type="text" placeholder="Username" id="username4">
             </div>
             <div class="row p-2">
-                <button class="btn btn-dark mx-2">Disable</button>
-                <input class="mx-2" type="text" placeholder="Username">
+                <button class="btn btn-dark mx-2" onclick="userDisable()">Disable</button>
+                <input class="mx-2" type="text" placeholder="Username" id="username5">
             </div>
         </div>
-
         <hr>
 
+        <!-- Group Fucntions -->
         <div class="container">
             <h4>Group Functions</h4>
             <div class="row p-2">

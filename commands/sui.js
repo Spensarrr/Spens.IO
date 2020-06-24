@@ -14,24 +14,24 @@ function serviceInfo() {
     });
 }
 
-function serviceRestart() {
-    exec('dir', (error, stdout) => {
-        if (error) {
-            console.log(`error: ${error.message}`);
-            return;
-        }
-        output = stdout;
-        document.getElementById('outputField').innerHTML = output;
-    });
-}
+// function serviceRestart() {
+//     exec('dir', (error, stdout) => {
+//         if (error) {
+//             console.log(`error: ${error.message}`);
+//             return;
+//         }
+//         output = stdout;
+//         document.getElementById('outputField').innerHTML = output;
+//     });
+// }
 
-function serviceStop() {
-    exec('dir', (error, stdout) => {
-        if (error) {
-            console.log(`error: ${error.message}`);
-            return;
-        }
-        output = stdout;
-        document.getElementById('outputField').innerHTML = output;
-    });
-}
+// function serviceStop() {
+//     exec('dir', (error, stdout) => {
+//         if (error) {
+//             console.log(`error: ${error.message}`);
+//             return;
+//         }
+//         output = stdout;
+//         document.getElementById('outputField').innerHTML = output;
+//     });
+// }
