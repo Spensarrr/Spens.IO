@@ -1,6 +1,3 @@
-// serviceInfo = 'mc.exe admin --json info ' + alias
-// serviceRestart  = 'mc.exe admin service restart ' + alias
-// serviceStop = 'mc.exe admin service stop ' + alias
 alias = localStorage.getItem('alias');
 
 function serviceInfo() {
