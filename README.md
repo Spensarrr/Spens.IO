@@ -4,7 +4,7 @@
 - [ ] service - restart and stop all MinIO servers
 - [ ] update - updates all MinIO servers
 - [ ] info - display MinIO server information
-- [ ] user - manage users
+- [x] user - manage users
 - [ ] group - manage groups
 - [ ] policy - manage canned policies
 - [ ] config - manage server configuration file
@@ -14,3 +14,8 @@
 - [ ] trace - show http trace for MinIO server
 - [ ] console - show console logs for MinIO server
 - [ ] prometheus - manages prometheus config settings
+
+### General Checklist
+- [ ] Styling using Bootstrap
+- [ ] Testing with actual server
+- [ ] General Command Line input area
