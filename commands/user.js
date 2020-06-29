@@ -1,6 +1,6 @@
 const { exec } = require("child_process");
 
-alias = localStorage.getItem('alias') + " ";
+alias = localStorage.getItem('alias');
 
 function userList() {
     exec("mc.exe admin user list --json " + alias, (error, stdout) => {
@@ -11,14 +11,20 @@ function userList() {
             return;
         }
         //console.log(`stdout: ${stdout}`);
+        output = stdout;
+        document.getElementById('outputField').innerHTML = output;
     });
     
 }
 
 function userAdd() {
-    username = document.getElementById('username1').value + " "
+    username = document.getElementById('username1').value
     password = document.getElementById('password1').value
-    exec("mc.exe admin user add " + alias + " " + username + password, (error, stdout) => {
+    exec("mc.exe admin user add" + " " + 
+            alias + " " +
+            username + " " + 
+            password, 
+            (error, stdout) => {
         if (error) {
             output = error;
             document.getElementById('outputField').innerHTML = output;
@@ -35,7 +41,10 @@ function userAdd() {
 
 function userRemove() {
     username = document.getElementById('username2').value + " "
-    exec("mc.exe admin user remove " + alias + username, (error, stdout) => {
+    exec("mc.exe admin user remove" + " " + 
+            alias + " " + 
+            username, 
+            (error, stdout) => {
         if (error) {
             output = error;
             document.getElementById('outputField').innerHTML = output;
@@ -51,7 +60,10 @@ function userRemove() {
 
 function userInfo() {
     username = document.getElementById('username3').value + " "
-    exec("mc.exe admin user info " + alias + username, (error, stdout) => {
+    exec("mc.exe admin user info" + " " + 
+            alias + " " + 
+            username, 
+            (error, stdout) => {
         if (error) {
             output = error;
             document.getElementById('outputField').innerHTML = output;
@@ -67,7 +79,10 @@ function userInfo() {
 
 function userEnable() {
     username = document.getElementById('username4').value + " "
-    exec("mc.exe admin user enable " + alias + username, (error, stdout) => {
+    exec("mc.exe admin user enable" + " " + 
+            alias + " " + 
+            username, 
+            (error, stdout) => {
         if (error) {
             output = error;
             document.getElementById('outputField').innerHTML = output;
@@ -83,7 +98,10 @@ function userEnable() {
 
 function userDisable() {
     username = document.getElementById('username5').value + " "
-    exec("mc.exe admin user disable " + alias + username, (error, stdout) => {
+    exec("mc.exe admin user disable" + " " + 
+            alias + " " + 
+            username, 
+            (error, stdout) => {
         if (error) {
             output = error;
             document.getElementById('outputField').innerHTML = output;
