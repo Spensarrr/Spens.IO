@@ -1,11 +1,11 @@
 # Spens.IO
 
 ### Command Checklist
-- [ ] service - restart and stop all MinIO servers
+- [x] service - restart and stop all MinIO servers
 - [ ] update - updates all MinIO servers
-- [ ] info - display MinIO server information
+- [x] info - display MinIO server information
 - [x] user - manage users
-- [ ] group - manage groups
+- [x] group - manage groups
 - [ ] policy - manage canned policies
 - [ ] config - manage server configuration file
 - [ ] heal - heal disks, buckets and objects on MinIO server
