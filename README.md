@@ -19,3 +19,7 @@
 - [ ] Styling using Bootstrap
 - [ ] Testing with actual server
 - [ ] General Command Line input area
+- [ ] About Modal Popup or Page
+
+### Bugs
+?

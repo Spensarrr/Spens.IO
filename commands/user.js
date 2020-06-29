@@ -14,12 +14,11 @@ function userList() {
         output = stdout;
         document.getElementById('outputField').innerHTML = output;
     });
-    
 }
 
 function userAdd() {
-    username = document.getElementById('username1').value
-    password = document.getElementById('password1').value
+    username = document.getElementById('username1').value;
+    password = document.getElementById('password1').value;
     exec("mc.exe admin user add" + " " + 
             alias + " " +
             username + " " + 
@@ -40,7 +39,7 @@ function userAdd() {
 }
 
 function userRemove() {
-    username = document.getElementById('username2').value + " "
+    username = document.getElementById('username2').value;
     exec("mc.exe admin user remove" + " " + 
             alias + " " + 
             username, 
@@ -59,7 +58,7 @@ function userRemove() {
 }
 
 function userInfo() {
-    username = document.getElementById('username3').value + " "
+    username = document.getElementById('username3').value;
     exec("mc.exe admin user info" + " " + 
             alias + " " + 
             username, 
@@ -78,7 +77,7 @@ function userInfo() {
 }
 
 function userEnable() {
-    username = document.getElementById('username4').value + " "
+    username = document.getElementById('username4').value;
     exec("mc.exe admin user enable" + " " + 
             alias + " " + 
             username, 
@@ -97,7 +96,7 @@ function userEnable() {
 }
 
 function userDisable() {
-    username = document.getElementById('username5').value + " "
+    username = document.getElementById('username5').value;
     exec("mc.exe admin user disable" + " " + 
             alias + " " + 
             username, 
