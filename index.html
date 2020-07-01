@@ -26,9 +26,11 @@
         <hr>
 
         <!-- SUI Fucntions -->
-        <button class="btn btn-dark" onclick="serviceInfo()">Server Information</button>
-        <button class="btn btn-dark" onclick="serviceRestart()">Service Restart</button>
-        <button class="btn btn-dark" onclick="serviceStop()">Service Stop</button>
+        <div class="container text-center">
+                <button class="btn btn-dark" onclick="serviceInfo()">Server Information</button>
+                <button class="btn btn-dark" onclick="serviceRestart()">Service Restart</button>
+                <button class="btn btn-dark" onclick="serviceStop()">Service Stop</button>
+        </div>
         <hr>
 
         <!-- User Fucntions -->
@@ -104,7 +106,12 @@
         <div class="container">
             <div class="row">
                 <div class="fixed-bottom outputBox">
-                    <p id="outputField">-</p>
+                    <div class="d-flex justify-content-center pt-2">
+                        <div class="spinner-grow" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                    <p id="outputField"></p>
                 </div>
             </div>
         </div>
