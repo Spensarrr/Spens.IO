@@ -1,7 +1,5 @@
 alias = localStorage.getItem('alias');
 
-// set      set IAM policy on a user or group
-
 function policyList() {
     exec("mc.exe admin policy list " + alias, (error, stdout) => {
         if (error) {

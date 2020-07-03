@@ -1,18 +1,33 @@
 alias = localStorage.getItem('alias');
 
-// get     get config of a MinIO server/cluster.
-// set     set new config file to a MinIO server/cluster.
+function configGet() {
+    command = document.getElementById('config1').value;
+    exec("mc.exe admin config get " + alias + " " + command, (error, stdout) => {
+        if (error) {
+            output = error;
+            document.getElementById('outputField').innerHTML = output;
+            console.log(`error: ${error.message}`);
+            return;
+        }
+        //console.log(`stdout: ${stdout}`);
+        output = stdout;
+        document.getElementById('outputField').innerHTML = output;
+        document.getElementById('config1').value = "";
+    });
+}
 
-// function groupList() {
-//     exec("mc.exe admin group list " + alias, (error, stdout) => {
-//         if (error) {
-//             output = error;
-//             document.getElementById('outputField').innerHTML = output;
-//             console.log(`error: ${error.message}`);
-//             return;
-//         }
-//         //console.log(`stdout: ${stdout}`);
-//         output = stdout;
-//         document.getElementById('outputField').innerHTML = output;
-//     });
-// }
+function configSet() {
+    command = document.getElementById('config2').value;
+    exec("mc.exe admin config set " + alias + " " + command, (error, stdout) => {
+        if (error) {
+            output = error;
+            document.getElementById('outputField').innerHTML = output;
+            console.log(`error: ${error.message}`);
+            return;
+        }
+        //console.log(`stdout: ${stdout}`);
+        output = stdout;
+        document.getElementById('outputField').innerHTML = output;
+        document.getElementById('policyconfig2name1').value = "";
+    });
+}

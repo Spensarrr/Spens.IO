@@ -6,9 +6,9 @@
 - [x] info - display MinIO server information
 - [x] user - manage users
 - [x] group - manage groups
-- [ ] policy - manage canned policies
-- [ ] config - manage server configuration file
-- [ ] heal - heal disks, buckets and objects on MinIO server
+- [x] policy - manage canned policies
+- [x] config - manage server configuration file
+- [x] heal - heal disks, buckets and objects on MinIO server
 - [ ] profile - generate profile data for debugging purposes
 - [ ] top - provide top like statistics for MinIO
 - [ ] trace - show http trace for MinIO server

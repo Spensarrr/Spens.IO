@@ -128,6 +128,48 @@
                 <input class="mx-2" type="text" placeholder="Groupname" id="groupname5">
             </div>
         </div>
+        <hr>
+
+        <!-- Config Fucntions -->
+        <div class="container">
+            <h4>Config Functions</h4>
+            <div class="row p-2">
+                <button class="btn btn-dark mx-2" onclick="configGet()">Config Get</button>
+                <input class="mx-2" type="text" placeholder="> /tmp/my-serverconfig" id="config1">
+            </div>
+            <div class="row p-2">
+                <button class="btn btn-dark mx-2" onclick="configSet()">Config Set</button>
+                <input class="mx-2" type="text" placeholder="< /tmp/my-serverconfig" id="config2">
+            </div>
+        </div>
+        <hr>
+
+        <!-- Heal Fucntions -->
+        <div class="container">
+            <h4>Heal Functions</h4>
+            <div class="row p-2">
+                <button class="btn btn-dark mx-2" onclick="healCommand1()">Heal</button>
+                <input class="mx-2" type="text" placeholder="flag" id="heal1">
+            </div>
+            <div class="row p-2">
+                <button class="btn btn-dark mx-2" onclick="healCommand2()">Heal Specific</button>
+                <input class="mx-2" type="text" placeholder="flag" id="heal2">
+                <input class="mx-2" type="text" placeholder="bucket name or object path" id="path">
+            </div>
+            <p>
+                FLAGS: <br>
+                --scan value <br>
+                --recursive, -r <br>
+                --dry-run, -n <br>
+                --force-start, -f <br>
+                --force-stop, -s <br>
+                --remove <br> 
+                --help, -h <br>
+            </p>
+            <div class="row p-2">
+                <button class="btn btn-dark mx-2" onclick="healStatus()">Heal Status</button>
+            </div>
+        </div>
 
         <!-- Extends bottom area -->
         <div class="container">
@@ -153,6 +195,8 @@
     <script src="commands/group.js"></script>
     <script src="commands/sui.js"></script>
     <script src="commands/policy.js"></script>
+    <script src="commands/config.js"></script>
+    <script src="commands/heal.js"></script>
     <script src="commands/save.js"></script>
 </body>
 
