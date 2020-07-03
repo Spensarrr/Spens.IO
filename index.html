@@ -96,6 +96,38 @@
                 <input class="mx-2" type="text" placeholder="Groupname" id="groupname6">
             </div>
         </div>
+        <hr>
+
+        <!-- Policy Fucntions -->
+        <div class="container">
+            <h4>Policy Functions</h4>
+            <div class="row p-2">
+                <button class="btn btn-dark mx-2" onclick="policyList()">Policy List</button>
+            </div>
+            <div class="row p-2">
+                <button class="btn btn-dark mx-2" onclick="policyAdd()">Add Policy</button>
+                <input class="mx-2" type="text" placeholder="Policy name" id="policyname1">
+                <input class="mx-2" type="text" placeholder="Filename" id="filename1">
+            </div>
+            <div class="row p-2">
+                <button class="btn btn-dark mx-2" onclick="policyRemove()">Remove Policy</button>
+                <input class="mx-2" type="text" placeholder="Policy name" id="policyname2">
+            </div>
+            <div class="row p-2">
+                <button class="btn btn-dark mx-2" onclick="policyInfo()">Information</button>
+                <input class="mx-2" type="text" placeholder="Policy name" id="policyname3">
+            </div>
+            <div class="row p-2">
+                <button class="btn btn-dark mx-2" onclick="policySetUser()">Set Policy to User</button>
+                <input class="mx-2" type="text" placeholder="Policy name" id="policyname4">
+                <input class="mx-2" type="text" placeholder="Username" id="username4">
+            </div>
+            <div class="row p-2">
+                <button class="btn btn-dark mx-2" onclick="policySetGroup()">Set Policy to Group</button>
+                <input class="mx-2" type="text" placeholder="Policy name" id="policyname5">
+                <input class="mx-2" type="text" placeholder="Groupname" id="groupname5">
+            </div>
+        </div>
 
         <!-- Extends bottom area -->
         <div class="container">
@@ -107,9 +139,9 @@
             <div class="row">
                 <div class="fixed-bottom outputBox">
                     <div class="d-flex justify-content-center pt-2">
-                        <div class="spinner-grow" role="status">
+                        <!-- <div class="spinner-grow" role="status">
                           <span class="sr-only">Loading...</span>
-                        </div>
+                        </div> -->
                     </div>
                     <p id="outputField"></p>
                 </div>
@@ -120,6 +152,7 @@
     <script src="commands/user.js"></script>
     <script src="commands/group.js"></script>
     <script src="commands/sui.js"></script>
+    <script src="commands/policy.js"></script>
     <script src="commands/save.js"></script>
 </body>
 

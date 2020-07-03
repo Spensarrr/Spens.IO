@@ -18,7 +18,7 @@ function policyList() {
 
 function policyAdd() {
     policyName = document.getElementById('policyname1').value;
-    fileName = document.getElementById('policyname1').value;
+    fileName = document.getElementById('filename1').value;
     exec("mc.exe admin policy add " + alias + " " + policyName + " " + fileName, (error, stdout) => {
         if (error) {
             output = error;
@@ -29,6 +29,8 @@ function policyAdd() {
         //console.log(`stdout: ${stdout}`);
         output = stdout;
         document.getElementById('outputField').innerHTML = output;
+        document.getElementById('policyname1').value = "";
+        document.getElementById('filename1').value = "";
     });
 }
 
@@ -44,6 +46,7 @@ function policyRemove() {
         //console.log(`stdout: ${stdout}`);
         output = stdout;
         document.getElementById('outputField').innerHTML = output;
+        document.getElementById('policyname2').value = "";
     });
 }
 
@@ -59,12 +62,13 @@ function policyInfo() {
         //console.log(`stdout: ${stdout}`);
         output = stdout;
         document.getElementById('outputField').innerHTML = output;
+        document.getElementById('policyname3').value = "";
     });
 }
 
 function policySetUser() {
     policyName = document.getElementById('policyname4').value;
-    userName = document.getElementById('policyname4').value;
+    userName = document.getElementById('username4').value;
     exec("mc.exe admin policy set " + alias + " " + policyName + " user=" + userName, (error, stdout) => {
         if (error) {
             output = error;
@@ -75,12 +79,14 @@ function policySetUser() {
         //console.log(`stdout: ${stdout}`);
         output = stdout;
         document.getElementById('outputField').innerHTML = output;
+        document.getElementById('policyname4').value = "";
+        document.getElementById('username4').value = "";
     });
 }
 
 function policySetGroup() {
     policyName = document.getElementById('policyname5').value;
-    groupName = document.getElementById('policyname5').value;
+    groupName = document.getElementById('groupname5').value;
     exec("mc.exe admin policy set " + alias + " " + policyName + " group=" + groupName, (error, stdout) => {
         if (error) {
             output = error;
@@ -91,5 +97,7 @@ function policySetGroup() {
         //console.log(`stdout: ${stdout}`);
         output = stdout;
         document.getElementById('outputField').innerHTML = output;
+        document.getElementById('policyname5').value = "";
+        document.getElementById('groupname5').value = "";
     });
 }
