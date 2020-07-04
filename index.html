@@ -27,9 +27,22 @@
 
         <!-- SUI Fucntions -->
         <div class="container text-center">
-                <button class="btn btn-dark" onclick="serviceInfo()">Server Information</button>
-                <button class="btn btn-dark" onclick="serviceRestart()">Service Restart</button>
-                <button class="btn btn-dark" onclick="serviceStop()">Service Stop</button>
+            <button class="btn btn-dark" onclick="serviceInfo()">Server Information</button>
+            <button class="btn btn-dark" onclick="serviceRestart()">Service Restart</button>
+            <button class="btn btn-dark" onclick="serviceStop()">Service Stop</button>
+        </div>
+        <hr>
+
+        <!-- Update Fucntions -->
+        <div class="container">
+            <h4>Update Functions</h4>
+            <div class="row p-2">
+                <button class="btn btn-dark mx-2" onclick="updateFunc()">Update</button>
+            </div>
+            <div class="row p-2">
+                <button class="btn btn-dark mx-2" onclick="updateFuncWithLink()">Update using mirror</button>
+                <input class="mx-2" type="text" placeholder="https://myfavorite-mirror.com/minio-server/linux-amd64/minio.sha256sum" id="link1">
+            </div>
         </div>
         <hr>
 
@@ -170,6 +183,58 @@
                 <button class="btn btn-dark mx-2" onclick="healStatus()">Heal Status</button>
             </div>
         </div>
+        <hr>
+
+        <!-- Profile Fucntions -->
+        <div class="container">
+            <h4>Profile Functions</h4>
+            <div class="row p-2">
+                <button class="btn btn-dark mx-2" onclick="profileStart()">Profile Start</button>
+                <input class="mx-2" type="text" placeholder="--type cpu" id="type1">
+            </div>
+            <div class="row p-2">
+                <button class="btn btn-dark mx-2" onclick="profileStop()">Profile Stop</button>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Top Fucntions -->
+        <div class="container">
+            <h4>Top Functions</h4>
+            <div class="row p-2">
+                <button class="btn btn-dark mx-2" onclick="topFunc()">Top locks</button>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Trace Fucntions -->
+        <div class="container">
+            <h4>Trace Functions</h4>
+            <div class="row p-2">
+                <button class="btn btn-dark mx-2" onclick="traceNoFlag()">Trace</button>
+            </div>
+            <div class="row p-2">
+                <button class="btn btn-dark mx-2" onclick="traceFlag()">Trace w/ Flag</button>
+                <input class="mx-2" type="text" placeholder="--help" id="flag1">
+            </div>
+            <p>
+                FLAGS: <br>
+                --verbose, -v <br>
+                --all, -a <br>
+                --errors, -e <br>
+                --help, -h <br>
+            </p>
+        </div>
+        <hr>
+
+        <!-- Console Fucntions -->
+        <div class="container">
+            <h4>Console Functions</h4>
+            <div class="row p-2">
+                <button class="btn btn-dark mx-2" onclick="consoleFunc()">Console</button>
+            </div>
+        </div>
+
 
         <!-- Extends bottom area -->
         <div class="container">
@@ -191,13 +256,17 @@
         </div>
     </div>
 
+    <script src="commands/save.js"></script>
+    <script src="commands/sui.js"></script>
     <script src="commands/user.js"></script>
     <script src="commands/group.js"></script>
-    <script src="commands/sui.js"></script>
     <script src="commands/policy.js"></script>
     <script src="commands/config.js"></script>
     <script src="commands/heal.js"></script>
-    <script src="commands/save.js"></script>
+    <script src="commands/profile.js"></script>
+    <script src="commands/top.js"></script>
+    <script src="commands/trace.js"></script>
+    <script src="commands/console.js"></script>
 </body>
 
 </html>
