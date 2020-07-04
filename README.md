@@ -13,7 +13,7 @@
 - [x] top - provide top like statistics for MinIO
 - [x] trace - show http trace for MinIO server
 - [x] console - show console logs for MinIO server
-- [ ] prometheus - manages prometheus config settings
+- [x] prometheus - manages prometheus config settings
 
 ### General Checklist
 - [ ] Styling using Bootstrap
